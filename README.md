@@ -15,4 +15,6 @@ Deploy en Heroku, url: https://try-my-ride.herokuapp.com/
 
 ## Instalación
 
+El proyecto esta corriendo en Heroku.
+
 - Clonar project: https://github.com/steven2305/try-my-ride-back.git

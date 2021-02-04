@@ -15,16 +15,17 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
 Route::post('/register',[AuthController::class, 'register']);
 
 Route::post('/login',[AuthController::class, 'login']);
 
+Route::get('/users',[AuthController::class, 'getUsers']);
+
 Route::group(['middleware' => ['auth:sanctum']], function (){
 
+    Route::get('/user/{id}',[AuthController::class, 'getUsersById']);
+    Route::put('/user/{id}',[AuthController::class, 'editUsersById']);
     Route::post('/logout',[AuthController::class, 'logout']);
 
 });

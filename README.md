@@ -10,7 +10,7 @@
 ## Descripción
 
 Back desarrollado con Laravel, uso de libreria Sanctum para el manejo de token.
-Deply en Heroku, url: https://try-my-ride.herokuapp.com/
+Deploy en Heroku, url: https://try-my-ride.herokuapp.com/
 
 
 ## Instalación
